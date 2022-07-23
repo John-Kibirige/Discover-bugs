@@ -54,17 +54,6 @@ navMenuLinks.forEach((anchor) => {
   });
 });
 
-// Check if the 768px break point is exceeded so that the menu popup disappears
-window.addEventListener('resize', () => {
-  if (window.screen.width > MIN_WIDTH_BREAK_POINT) {
-    htmlElement.classList.remove('active');
-    humberger.classList.remove('active');
-    headerLinks.classList.remove('active');
-    headerLogo.classList.remove('active');
-    blur.classList.remove('active');
-  }
-});
-
 /* --------------------------POPUP MENU FOR BOTH MOBILE AND DESKTOP ---------------------- */
 /**
  * Function returns a projects template for the project section
